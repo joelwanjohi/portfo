@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dev Joel</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="assets/images/jw.png" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Open+Sans:wght@400;500;700&family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#">
+        <h1 class="logo">JW</h1>
+      </a>
+
+      <button class="nav-toggle-btn" aria-label="Toggle Menu" data-nav-toggle-btn>
+        <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
+        <ion-icon name="close-outline" class="close-icon"></ion-icon>
+      </button>
+
+      <nav class="navbar container">
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link" data-nav-link>About</a>
+          </li>
+
+          <li>
+            <a href="#portfolio" class="navbar-link" data-nav-link>Projects</a>
+          </li>
+
+          <li>
+            <a href="#skills" class="navbar-link" data-nav-link>Skills</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+
+          <li>
+            <a href="#blog" class="navbar-link" data-nav-link>Articles</a>
+          </li>
+
+          <li>
+            <a href="#" class="btn btn-primary">Resume</a>
+          </li>
+
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home">
+        <div class="container">
+
+          <div class="hero-banner">
+
+            <img src="./assets/images/joe.jpg" width="800" height="864" loading="lazy" alt="Ethan's Photo"
+              class="img-cover">
+
+            <div class="elem elem-1">
+              <p class="elem-title">4</p>
+
+              <p class="elem-text">Years of Success</p>
+            </div>
+
+            <div class="elem elem-2">
+              <p class="elem-title">50+</p>
+
+              <p class="elem-text">Projects Completed</p>
+            </div>
+
+            <div class="elem elem-3">
+              <ion-icon name="trophy"></ion-icon>
+            </div>
+
+            <!-- <img src="./assets/images/ui.jpg" width="169" height="172" alt="I'm developer from New York"
+              class="rotate-img"> -->
+
+          </div>
+
+          <div class="hero-content">
+
+            <h2 class="hero-title">
+              <span>Hello I'm</span>
+              <strong>Joel Wanjohi</strong>Full-Stack Mobile and Desktop App Developer
+            </h2>
+
+            <p class="hero-text">
+              Passionate about building robust, beautiful and clean experiences for my users. I look at languages
+        frameworks as just tools that help bring an idea to life.
+            </p>
+
+            <div class="btn-group">
+              <a href="#contact" class="btn btn-primary blue">Say Hi</a> 
+            
+          
+
+              <a href="#about" class="btn">About Me</a>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" id="about">
+        <div class="container">
+
+          <figure class="about-banner">
+
+            <img src="./assets/images/contact me.png" width="800" height="652" loading="lazy" alt="Ethan's Photo"
+              class="img-cover">
+
+            <img src="./assets/images/absolute-image.png" width="800" height="717" loading="lazy" alt="Ethan's Photo"
+              class="abs-img">
+
+              <div class="abs-icon abs-icon-1">
+                <img src="data:image/png;base64,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" alt="Dart Logo" style="width: 40px; height: 40px;" />
+              </div>
+              
+              <div class="abs-icon abs-icon-2">
+                <img src="data:image/jpeg;base64,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" alt="Kotlin Logo" style="width: 40px; height: 40px;" />
+              </div>
+              
+              <div class="abs-icon abs-icon-3">
+                <ion-icon name="logo-nodejs"></ion-icon> <!-- Node.js icon -->
+              </div>
+              
+
+          </figure>
+
+          <div class="about-content">
+
+            <p class="section-subtitle">I am a Software Engineer</p>
+
+            <h2 class="h2 section-title">Full-Stack Mobile, Web, and Desktop App Developer, ensuring all applications look beautiful.</h2>
+
+            <p class="section-text">
+              I look at languages
+              frameworks as just tools that help bring an idea to life, I'm a pro in
+              Flutter, everything app / web dev, and also in DevOps. 
+            </p>
+
+            <p class="section-text">
+              I am a fast lerner and capable of adapting to any kind of challenging task very quickly.
+            </p>
+
+            <a href="#portfolio" class="btn btn-primary blue">Projects</a>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PORTFOLIO
+      -->
+
+      <section class="section portfolio" id="portfolio">
+        <div class="container">
+
+          <p class="section-subtitle">Projects</p>
+
+          <h2 class="h2 section-title">LATEST PROJECTS</h2>
+
+          <p class="section-text">
+            As dev, I build projects. For some, solo. For others, with wonderful team
+            mates. We've built ground-breaking solutions. Following are hand-picked
+            projects I've worked (-ing) on over the years.
+          </p>
+
+          <ul class="portfolio-list">
+
+            <li>
+              <a href="#" class="portfolio-card" style="background-image: url('./assets/images/portfolio-1.jpg')">
+                <div class="card-content">
+
+                  <p class="card-subtitle">Portifolio</p>
+
+                  <h3 class="h3 card-title">Joel master personal Portifolio</h3>
+
+                  <span class="btn-link">
+                    <span>View Project</span>
+
+                    <ion-icon name="arrow-forward"></ion-icon>
+                  </span>
+
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="portfolio-card" style="background-image: url('./assets/images/portfolio-2.jpg')">
+                <div class="card-content">
+
+                  <p class="card-subtitle">Gadget Mtaa</p>
+
+                  <h3 class="h3 card-title">Electronics App</h3>
+
+                  <span class="btn-link">
+                    <span>View Project</span>
+
+                    <ion-icon name="arrow-forward"></ion-icon>
+                  </span>
+
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="portfolio-card" style="background-image: url('./assets/images/portfolio-3.jpg')">
+                <div class="card-content">
+
+                  <p class="card-subtitle">Remind Me </p>
+
+                  <h3 class="h3 card-title">Reminder app</h3>
+
+                  <span class="btn-link">
+                    <span>View Project</span>
+
+                    <ion-icon name="arrow-forward"></ion-icon>
+                  </span>
+
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="portfolio-card" style="background-image: url('./assets/images/portfolio-4.jpg')">
+                <div class="card-content">
+
+                  <p class="card-subtitle">Eye Check AI</p>
+
+                  <h3 class="h3 card-title"> AI-powered tool for preliminary assessment of eye conditions</h3>
+
+                  <span class="btn-link">
+                    <span>View Project</span>
+
+                    <ion-icon name="arrow-forward"></ion-icon>
+                  </span>
+
+                </div>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SKILLS
+      -->
+
+      <section class="section skills" id="skills">
+        <div class="container">
+
+          <p class="section-subtitle">My Skills</p>
+
+          <h2 class="h2 section-title">Committed to Continuous Improvement</h2>
+
+          <p class="section-text">
+            I bring a comprehensive and evolving skill set in mobile and web application development, AI integration, and project management.
+          </p>
+
+          <ul class="skills-list">
+
+            <li class="skills-item">
+              <div class="wrapper" style="width: 98%">
+                <h3 class=" skills-title">Dart</h3>
+
+                <data class="skills-data" value="95">98%</data>
+              </div>
+
+              <div class="skills-progress-box">
+                <div class="skills-progress" style="width: 95%"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="wrapper" style="width: 75%">
+                <h3 class="skills-title">Node.js</h3>
+
+                <data class="skills-data" value="75">75%</data>
+              </div>
+
+              <div class="skills-progress-box">
+                <div class="skills-progress" style="width: 75%"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="wrapper" style="width: 90%">
+                <h3 class="skills-title">MongoDB</h3>
+
+                <data class="skills-data" value="90">90%</data>
+              </div>
+
+              <div class="skills-progress-box">
+                <div class="skills-progress" style="width: 90%"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="wrapper" style="width: 70%">
+                <h3 class="skills-title">Python</h3>
+
+                <data class="skills-data" value="70">70%</data>
+              </div>
+
+              <div class="skills-progress-box">
+                <div class="skills-progress" style="width: 70%"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="wrapper" style="width: 80%">
+                <h3 class="skills-title">Kotlin</h3>
+
+                <data class="skills-data" value="80">80%</data>
+              </div>
+
+              <div class="skills-progress-box">
+                <div class="skills-progress" style="width: 80%"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="wrapper" style="width: 75%">
+                <h3 class="skills-title">Firebase</h3>
+
+                <data class="skills-data" value="75">75%</data>
+              </div>
+
+              <div class="skills-progress-box">
+                <div class="skills-progress" style="width: 75%"></div>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CONTACT
+      -->
+
+      <section class="section contact" id="contact">
+        <div class="container">
+
+          <div class="contact-card">
+
+            <p class="card-subtitle">Lets Work Together</p>
+
+            <h2 class="h2 section-title">Just Say Hi👋</h2>
+
+            <div class="wrapper">
+
+              <form action="" class="contact-form">
+
+                <input type="text" name="name" placeholder="Name" required class="contact-input">
+
+                <input type="email" name="email" placeholder="Email" required class="contact-input">
+
+                <textarea name="message" placeholder="Message" required class="contact-input"></textarea>
+
+                <button type="submit" class="btn-submit">Submit Message</button>
+
+              </form>
+
+              <ul class="contact-list">
+
+                <li class="contact-item">
+
+                  <div class="contact-icon">
+                    <ion-icon name="location"></ion-icon>
+                  </div>
+
+                  <div>
+                    <h3 class="contact-item-title">Address</h3>
+
+                    <address class="contact-item-link">
+                      60 200 Meru
+                    </address>
+                  </div>
+
+                </li>
+
+                <li class="contact-item">
+
+                  <div class="contact-icon">
+                    <ion-icon name="mail"></ion-icon>
+                  </div>
+
+                  <div>
+                    <h3 class="contact-item-title">Email</h3>
+
+                    <a href="mailto:hello@ethan.com" class="contact-item-link">wanjohijoel207.com</a>
+                  </div>
+
+                </li>
+
+                <li class="contact-item">
+
+                  <div class="contact-icon">
+                    <ion-icon name="call"></ion-icon>
+                  </div>
+
+                  <div>
+                    <h3 class="contact-item-title">Phone</h3>
+
+                    <a href="tel:+1234567890" class="contact-item-link">+254 743864282</a>
+                  </div>
+
+                </li>
+
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #BLOG
+      -->
+
+      <section class="section blog" id="blog">
+        <div class="container">
+
+          <p class="section-subtitle">Latest Articles</p>
+
+          <h2 class="h2 section-title">Checkout My Recent Articles</h2>
+
+          <p class="section-text">
+            I write articles on diverse topics, including mobile app development with Flutter, tech communities, web development, and personal stories. Some of my works are published on my blogs, while others have been featured as guest posts on various platforms..
+          </p>
+
+          <ul class="blog-list">
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+                  <a href="#">
+                    <img src="./assets/images/download.png" width="1181" height="843" loading="lazy"
+                      alt="Jim Morisson Says when the musics over turn off the light" class="img-cover">
+                  </a>
+                </figure>
+
+                <a href="#" class="card-tag">🚀 flutter_dotenv 🔧</a>
+
+                <h3 class="card-title">
+                  <a href="https://lnkd.in/dZd_6Ybb">Dive into configuring flutter_dotenv, addressing nuanced challenges, and optimizing your setup for production.</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+                  <a href="#">
+                    <img src="./assets/images/node.png" width="1181" height="843" loading="lazy"
+                      alt="Jim Morisson Says when the musics over turn off the light" class="img-cover">
+                  </a>
+                </figure>
+
+                <a href="#" class="card-tag">Mongoose Setup</a>
+
+                <h3 class="card-title">
+                  <a href="https://lnkd.in/dZd_6Ybb"> Process of setting up Mongoose, a popular ODM (Object Data Modeling) library for MongoDB and Node.js. </a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+                  <a href="#">
+                    <img src="./assets/images/1_Komv7k6zOzl3EA4dn98KWA.png" width="1181" height="843" loading="lazy"
+                      alt="Jim Morisson Says when the musics over turn off the light" class="img-cover">
+                  </a>
+                </figure>
+
+                <a href="#" class="card-tag">DevOps Roadmap</a>
+
+                <h3 class="card-title">
+                  <a href="https://lnkd.in/dZd_6Ybb">A comprehensive roadmap to becoming proficient in DevOps, covering the essential skills, tools, and practices needed to excel in the field. It walks through the key stages of DevOps adoption,</a>
+                </h3>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <p class="copyright">
+        &copy; 2025 <a href="#" class="copyright-link">jw</a>. All Rights Reseverd
+      </p>
+
+      <ul class="footer-list">
+        <li>
+          <a href="#" class="footer-link">Terms & Condition</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Privacy Policy</a>
+        </li>
+      </ul>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-to-top" data-back-to-top>BACK TOP</a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
